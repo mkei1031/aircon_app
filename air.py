@@ -8,8 +8,8 @@ st.write('\n')
 #店舗切替ボタン
 selected_store = st.selectbox('店舗を選択',shop_list,index=0)
 
-temp_max = st.slider("9時〜19時の最高気温（℃）", min_value=-10.0, max_value=50.0, step=1)
-temp_min = st.slider("9時〜19時の最低気温（℃）", min_value=-10.0, max_value=50.0, step=1)
+temp_max = st.slider("9時〜19時の最高気温（℃）", min_value=-10.0, max_value=50.0, value = 25, step=1)
+temp_min = st.slider("9時〜19時の最低気温（℃）", min_value=-10.0, max_value=50.0, value = 20, step=1)
 humidity_max = st.slider("9時〜19時の最高湿度（％）", 0, 100, 70)
 humidity_min = st.slider("9時〜19時の最低湿度（％）", 0, 100, 50)
 weather = st.selectbox("天気", ["晴れ", "曇り", "雨"])
